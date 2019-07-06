@@ -76,14 +76,6 @@ header img {
     padding-right: 3.125%;
 }
 /* Navigation styles*/
-
- /* hide the mobile menu */
- #mobile_menu { display: none; }
- .
- .
-     /* display the mobile menu */
- #mobile_menu { display: block; }
-
 #nav_menu ul{
     list-style: none;
     position: relative;
@@ -127,6 +119,11 @@ header img {
     display: block;
     clear: both;
 }
+
+/* hide the mobile menu */
+ #mobile_menu{
+     display: none;
+ }
 /* the styles for the section */
 section{
     width: 58%;
@@ -218,43 +215,29 @@ article p {
 }
 /*Media Queries*/
  @media only screen and (max-width: 959px){
-     section h1{
-         font-size: 135%;
-     }
-     aside, section h2{
-         font-size: 120%;
-     }
- }
- @media  only screen and (max-width: 767px){
+     section h1{font-size: 135%;}
+     aside, section h2{font-size: 120%;}  }
 
-     header{
-         text-align: center;
-     }
-     header img{
-         display: flex;
-         max-width: 80px;
-         flex-direction: column;
-         float: none;
-     }
-     section, aside{
-         float: none;
-         width:96%;
-     }
-     aside{
-         padding-right: 2%;
-     }
-     article img{
-         max-width: 30%;
-     }
-     aside div{
-         -webkit-column-count: 2; /* Chrome, Safari, Opera */
-         -moz-column-count: 2; /* Firefox */
-         column-count: 2;
-     }
+ @media  only screen and (max-width: 767px){
+     header{text-align: center;}
+     header img{display: flex;max-width: 80px;
+         flex-direction: column;float: none;}
+     section, aside{float: none;width:96%;}
+     aside{padding-right: 2%;}
+     article img{max-width: 30%;}
+     aside div{-webkit-column-count: 2; /* Chrome, Safari, Opera */
+         -moz-column-count: 2; /* Firefox */column-count: 2;}
  }
 @media only screen and (max-width: 479px){
     *{
         font-size: 90%;
+    }
+    /* display the mobile menu */
+    .slicknav_menu {
+        background-color: #800000 !important;
+    }
+    #nav_menu{
+        display: none;
     }
 }
 /* the styles for the footer */
